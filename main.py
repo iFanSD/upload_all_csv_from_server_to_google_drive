@@ -39,7 +39,7 @@ def upload_to_gd_folder(folder_id, file_path, name_of_file, type=None):
 
 
 if __name__ == '__main__':
-    folder_path='/home/ifansd/all'
+    folder_path='/home/ifansd/all/'
     folder_id_created = create_folder_in_gd(name_of_folder="all_test4")
     for name_of_file in os.listdir(folder_path):
         upload_to_gd_folder(name_of_file=name_of_file, folder_id=folder_id_created,type='text/csv',file_path=f'{folder_path}{name_of_file}')
